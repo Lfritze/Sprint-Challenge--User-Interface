@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
-   License: none (public domain) INITIAL COMMIT
+   License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -66,9 +66,45 @@ p {
     line-height: 1.4;
 }
 
+header {
+  margin: 10px;
+}
+
+nav .lambdaLogo {
+/*   padding-right:5px; */
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+/*   justify-content: space-evenly; */
+  
+  width: 800px;
+  margin: 0 auto;
+/*   border: 1px solid black; */
+}
+
+nav .lambdaLogo {
+  width: 200px;
+/*   border: 1px solid black; */
+}
+
+nav a {
+
+  text-decoration: none;
+  color: black;
+  padding: 25px;  
+/*   border: 1px solid black; */
+}
+
+.top-picture {
+  padding: 0 0 15px;
+}
+
 .container {
     width: 800px;
     margin: 0 auto;
+  
 }
 
 .top-content {
@@ -101,10 +137,11 @@ p {
     justify-content: space-evenly;
 }
 
+/* box coloring */
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
+    background: teal;
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -112,8 +149,45 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box:nth-child(2) {
+  background: gold;
+}
+
+.middle-content .boxes .box:nth-child(3) {
+  background: cadetblue;
+}
+
+.middle-content .boxes .box:nth-child(4) {
+  background: coral;
+}
+
+.middle-content .boxes .box:nth-child(5) {
+  background: crimson;
+}
+
+.middle-content .boxes .box:nth-child(6) {
+  background: forestgreen;
+}
+
+.middle-content .boxes .box:nth-child(7) {
+  background: darkorchid;
+}
+
+.middle-content .boxes .box:nth-child(8) {
+  background: hotpink;
+}
+
+.middle-content .boxes .box:nth-child(9) {
+  background: indigo;
+}
+
+.middle-content .boxes .box:nth-child(10) {
+  background: dodgerblue;
+}
+
 .bottom-content {
     display: flex;
+  
     margin: 0 2% 20px;
     justify-content: space-around;
 }
@@ -127,8 +201,11 @@ p {
 }
 
 footer {
-    width: 100%;
+  display: flex;  
+  height: 60px;
+  width: 100%;
     background: black;
+  
 }
 
 footer nav {
@@ -137,7 +214,7 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 14px; 
 }
 
 footer nav a {
